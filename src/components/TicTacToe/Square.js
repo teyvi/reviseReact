@@ -1,15 +1,12 @@
-import React from "react";
+import {useState} from "react";
 
-function Square({value}) {
-  function handleClick(){
-    console.log("clicked!")
-  }
+function Square({value , onSquareClick}) {
+
+
   return (
     <div>
       <div>
-        <button className="square"
-        onClick={handleClick}
-        >{value}</button>
+        <button className="square" onClick={onSquareClick}>{value}</button>
       </div>
     </div>
   );
